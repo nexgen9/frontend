@@ -1,0 +1,242 @@
+
+
+  
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    background-color: transparent;
+   width: 100%;
+   height:90px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    box-shadow: inset 0px 40px 50px -5px rgba(0, 0, 0, 0.5),
+              inset 0px 10px 20px -10px rgba(0, 0, 0, 0.5);
+  }
+  /*logo*/
+  
+  .logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 5px;
+
+}
+  
+  .logo img {
+    width: 60px;
+    height: 60px;
+    padding: 3px;
+    border-radius: 50%;
+  }
+  
+  .logo p {
+    color: rgb(0, 0, 0);
+    font-family: "oswald";
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  /* search and cart*/
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  a .search{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffffdc;
+    color: black;
+    padding: 12px 17px;
+    border-radius: 40px;
+    font-weight: 400;
+    font-size: 17px;
+    font-family: "poppis",sans-serif;
+    gap: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.637);
+}
+a .search:hover{
+    background-color: #bebcbc;
+}
+  
+  
+  .cart-icon {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    color:rgba(255, 255, 255, 0.938) 
+  }
+  /*tab screen*/
+ 
+  /*menu*/
+  .menu-icon, .close-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+    color: #fff;
+  }
+  
+  /* Full-Screen Overlay */
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999; /* Keep it on top */
+  }
+  
+  /* Menu Styling */
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hidden by default */
+    width: 55%; /* Adjust width as needed */
+    height:100vh;
+    background-color: #f5f3f3;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 2rem;
+    gap: 1.5rem;
+    transition: right 0.3s ease; /* Smooth slide-in effect */
+    z-index: 1000;
+  }
+  
+  .menu.open {
+    right: 0; /* Slide in when open */
+    color: #fff;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .menu ul li {
+    width: 100%;
+  }
+  
+  .menu ul li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    border-bottom: 1px solid black;
+    padding: 1rem 0;
+    transition: color 0.3s;
+    font-weight: 450;
+  }
+  
+  .menu ul li a:hover {
+    color: #b7c0c9;
+  }
+  
+  .menu .close-icon {
+    align-self: flex-end;
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+  }
+  
+  /* Menu Open State */
+  .menu-overlay.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav-list {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-list li {
+    list-style: none;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 18px;
+   
+    align-self: center;
+  }
+  
+  .nav-list a.active,
+  .nav-list a:hover {
+    transform: translateY(-3px)scale(1.2);
+    color:rgb(0, 0, 0) ;
+    
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 900px) {
+    .cart-tab{
+        display: flex;
+        gap: 7px;
+    }
+    .cart-tab .cart-icon{
+        color: #000000;
+    }
+    .pc-nav {
+      display: none;
+      background: transparent;
+    }
+  
+    .tab-nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: rgba(154, 145, 130, 0.731);
+      }
+  
+    .menu ul {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  
+    .menu ul li a {
+      font-size: 1.5rem;
+    }
+    a .search-tab{
+        width: 190px;
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+       
+        color: #fff;
+        font-size: 19px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        align-items: center;
+        text-decoration: none;
+    }
+    a .search-tab .search-icon{
+        font-size: 22px;
+        font-weight: 900;
+    }
+  }
+  
+  @media (min-width: 891px) {
+    .tab-nav {
+      display: none;
+    }
+  }
+  a{
+    text-decoration: none;
+  }

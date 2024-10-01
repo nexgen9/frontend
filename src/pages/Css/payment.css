@@ -1,0 +1,172 @@
+.order-info{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+   height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    
+}
+.checkout-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+ height: 100%;
+    width: 100%;
+    flex: 1;
+    padding-left: 40px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    gap: 4px;
+    width: 100%;
+}
+.shipping{
+    letter-spacing: 1px;
+    font-family: "oswald";
+    font-size: 28px;
+    align-self: start;
+}
+input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+}
+select{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+}
+.form-group label{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "poppins";
+}
+.form-group button{
+    height: 50px;
+    padding: 10px;
+    color: white;
+    border: none;
+    background: #000;
+    font-size: 18px;
+    border-radius: 10px;
+
+}
+.form-group span{
+    color: darkred;
+}
+.order-list{
+    display: flex;
+   flex: 1;
+   min-height: 60vh;
+   position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(241, 241, 241);
+    border-radius: 20px;
+}
+.order-list .details{
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+ display: flex;
+ width: 100%;
+ justify-content: space-between;
+ align-items: center;
+
+}
+h4{
+    letter-spacing: 1px;
+    font-family: "oswald";
+    font-size: 28px;
+    align-self: start;
+}
+.seperate{
+    width: 100%;height: 3px;
+    color: #000;
+    background: #000;
+    position: absolute;
+    top: 75px;
+}
+.detail{
+    padding: 10px;
+    position: absolute;
+   bottom: 10px;
+ display: flex;
+ width: 100%;
+ justify-content: space-between;
+ 
+ align-items: center;
+
+}
+.seperat{
+    width: 100%;height: 3px;
+    color: #000;
+    background: #000;
+    position: absolute;
+    bottom: 75px;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.order li {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    list-style: none;
+}
+li p {
+    font-size: 22px;
+    font-family: "poppins";
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 20px;
+}
+li p span {
+    color: #282828;
+    font-weight: 450;
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+@media screen and (max-width:900px){
+    .order-info{
+        width: 100%;
+       
+        display: flex;
+        flex-direction: column;
+       height: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        
+    }
+    .order-list{
+        width: 90%;
+        margin: 0 50px;
+       
+    }
+}

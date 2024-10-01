@@ -1,0 +1,14 @@
+.breadcrum{
+    color: rgb(76, 76, 76);
+    font-size: 12px;
+    font-weight: 300;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+.breadcrum .b-icon{
+    font-size: 12px;
+    color: rgb(76, 76, 76); 
+    margin: 0 4px;
+    font-weight: 300;
+}

@@ -1,0 +1,24 @@
+.relatedproduct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.relatedproduct .products{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 450px;
+   margin: 40px auto;
+}
+@media screen and (max-width:900px){
+    .relatedproduct .products{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(1fr);
+        
+        margin: 40px auto;
+        align-items: center;
+        justify-content: center;
+    }
+}
