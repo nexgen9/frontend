@@ -4,17 +4,24 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx npm-force-resolutions",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ajv": "^8.17.1",
+    "ajv": "8.17.1",
     "ajv-keywords": "^5.1.0",
     "eslint": "^9.11.1",
     "eslint-config-react-app": "^7.0.1",
+    "npm-force-resolutions": "^0.0.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
+  },
+  "resolutions": {
+    "ajv": "8.17.1"
   }
 }
