@@ -23,6 +23,7 @@ console.log(all_product)
 
   // Submits the order
   const handleSubmit = async (event) => {
+    const baseUrl = process.env.REACT_APP_BASE_URL || "http://localhost:4000";
     event.preventDefault();
 
     const formData = {
@@ -31,7 +32,7 @@ console.log(all_product)
     };
 
     try {
-      const response =  await fetch("http://localhost:4000/orders",  {
+      const response =  await fetch(`${baseUrl}/orders`,  {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

@@ -6,9 +6,10 @@ import {motion} from "framer-motion"
 import {fadeIn2} from"../../variants/Variant2"
 
 function Populair() {
+  const baseUrl = process.env.REACT_APP_BASE_URL || "http://localhost:4000";
  const [popular,setPopular]=useState([])
  useEffect(()=>{
-   fetch("http://localhost:4000/popularinwomen").then((response)=>response.json()).then((data)=>{setPopular(data)})
+   fetch(`${baseUrl}/popularinwomen`).then((response)=>response.json()).then((data)=>{setPopular(data)})
  },[])
 
   return (

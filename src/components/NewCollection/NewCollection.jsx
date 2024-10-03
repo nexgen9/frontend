@@ -5,9 +5,10 @@ import Item from '../Item/Item'
 
 
 const NewCollection = () => {
+  const baseUrl = process.env.REACT_APP_BASE_URL || "http://localhost:4000";
   const [newc ,setNewc]=useState([])
   useEffect(()=>{
-   fetch("http://localhost:4000/newcollection").then((response)=>response.json()).then((data)=>{setNewc(data)})
+   fetch(`${baseUrl}/newcollection`).then((response)=>response.json()).then((data)=>{setNewc(data)})
   },[])
   return (
     <div id="shop" className='newcollection'>

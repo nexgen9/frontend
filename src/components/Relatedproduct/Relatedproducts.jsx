@@ -5,9 +5,10 @@ import Item from "../Item/Item"
 
 
 function Relatedproducts(props) {
+  const baseUrl = process.env.REACT_APP_BASE_URL || "http://localhost:4000";
   const [related ,setRelated]=useState([]) 
   useEffect(()=>{
-    fetch("http://localhost:4000/related").then((response)=>response.json()).then((data)=>{setRelated(data)})
+    fetch(`${baseUrl}/related`).then((response)=>response.json()).then((data)=>{setRelated(data)})
    },[])
    
    
