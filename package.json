@@ -13,13 +13,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ajv": "6.12.6",
-    "ajv-keywords": "^5.1.0",
+    "@eslint/eslintrc": "^3.1.0",
+    "ajv": "^8.17.1",
     "eslint": "^9.11.1",
     "eslint-config-react-app": "^7.0.1",
     "npm-force-resolutions": "^0.0.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   }
- 
 }
